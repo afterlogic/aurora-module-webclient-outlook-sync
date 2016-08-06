@@ -19,7 +19,7 @@ var
  */
 function COutlookSyncSettingsPaneView()
 {
-	this.oResetPasswordViewModel = ModulesManager.run('ChangePasswordClient', 'getResetPasswordView');
+	this.oCreateLoginPasswordView = ModulesManager.run('ExternalServices', 'getCreateLoginPasswordView');
 	
 	this.server = ko.observable('');
 	
