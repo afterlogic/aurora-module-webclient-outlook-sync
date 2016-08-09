@@ -1,6 +1,6 @@
 'use strict';
 
-var Types = require('modules/CoreClient/js/utils/Types.js');
+var Types = require('%PathToCoreWebclientModule%/js/utils/Types.js');
 
 module.exports = {
 	ServerModuleName: 'OutlookSync',

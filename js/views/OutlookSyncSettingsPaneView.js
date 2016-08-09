@@ -3,13 +3,13 @@
 var
 	ko = require('knockout'),
 	
-	TextUtils = require('modules/CoreClient/js/utils/Text.js'),
+	TextUtils = require('%PathToCoreWebclientModule%/js/utils/Text.js'),
 	
-	Ajax = require('modules/CoreClient/js/Ajax.js'),
-	Api = require('modules/CoreClient/js/Api.js'),
-	App = require('modules/CoreClient/js/App.js'),
-	ModulesManager = require('modules/CoreClient/js/ModulesManager.js'),
-	UserSettings = require('modules/CoreClient/js/Settings.js'),
+	Ajax = require('%PathToCoreWebclientModule%/js/Ajax.js'),
+	Api = require('%PathToCoreWebclientModule%/js/Api.js'),
+	App = require('%PathToCoreWebclientModule%/js/App.js'),
+	ModulesManager = require('%PathToCoreWebclientModule%/js/ModulesManager.js'),
+	UserSettings = require('%PathToCoreWebclientModule%/js/Settings.js'),
 	
 	Settings = require('modules/%ModuleName%/js/Settings.js')
 ;
