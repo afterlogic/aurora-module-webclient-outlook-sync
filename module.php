@@ -4,6 +4,8 @@ class OutlookSyncWebclientModule extends AApiModule
 {
 	public function GetAppData()
 	{
+		\CApi::checkUserRoleIsAtLeast(\EUserRole::Anonymous);
+		
 		return array(
 			'Plugin32DownloadLink' => '', // AppData.Links.OutlookSyncPlugin32
 			'Plugin64DownloadLink' => '', // AppData.Links.OutlookSyncPlugin64
