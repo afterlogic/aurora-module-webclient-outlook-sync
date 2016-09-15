@@ -2,6 +2,12 @@
 
 class OutlookSyncWebclientModule extends AApiModule
 {
+	/***** public functions might be called with web API *****/
+	/**
+	 * Obtaines list of module settings for authenticated user.
+	 * 
+	 * @return array
+	 */
 	public function GetAppData()
 	{
 		\CApi::checkUserRoleIsAtLeast(\EUserRole::Anonymous);
@@ -12,4 +18,5 @@ class OutlookSyncWebclientModule extends AApiModule
 			'PluginReadMoreLink' => '' // AppData.Links.OutlookSyncPluginReadMore
 		);
 	}
+	/***** public functions might be called with web API *****/
 }
