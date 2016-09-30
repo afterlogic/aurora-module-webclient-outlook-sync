@@ -29,7 +29,9 @@ function COutlookSyncSettingsPaneView()
 	this.sPlugin64DownloadLink = Settings.Plugin64DownloadLink;
 	this.sPluginReadMoreLink = Settings.PluginReadMoreLink;
 
-	this.sCredentialsHintText = TextUtils.getMobileCredentialsInfo(App);
+	this.credentialsHintText = ko.computed(function () {
+		return TextUtils.i18n('COREWEBCLIENT/INFO_MOBILE_CREDENTIALS', {'LOGIN': App.userAccountLogin()});
+	}, this);
 }
 
 COutlookSyncSettingsPaneView.prototype.ViewTemplate = '%ModuleName%_OutlookSyncSettingsPaneView';
