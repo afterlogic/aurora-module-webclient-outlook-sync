@@ -1,6 +1,8 @@
 <?php
 
-class OutlookSyncWebclientModule extends AApiModule
+namespace Aurora\Modules;
+
+class OutlookSyncWebclientModule extends \AApiModule
 {
 	/***** public functions might be called with web API *****/
 	/**
