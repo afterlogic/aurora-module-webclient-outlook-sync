@@ -2,7 +2,7 @@
 
 namespace Aurora\Modules;
 
-class OutlookSyncWebclientModule extends \AApiModule
+class OutlookSyncWebclientModule extends \Aurora\System\AbstractModule
 {
 	/***** public functions might be called with web API *****/
 	/**
@@ -12,7 +12,7 @@ class OutlookSyncWebclientModule extends \AApiModule
 	 */
 	public function GetSettings()
 	{
-		\CApi::checkUserRoleIsAtLeast(\EUserRole::Anonymous);
+		\Aurora\System\Api::checkUserRoleIsAtLeast(\EUserRole::Anonymous);
 		
 		return array(
 			'Plugin32DownloadLink' => '', // AppData.Links.OutlookSyncPlugin32
