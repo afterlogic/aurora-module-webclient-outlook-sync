@@ -2,7 +2,7 @@
 
 namespace Aurora\Modules;
 
-class OutlookSyncWebclientModule extends \Aurora\System\AbstractModule
+class OutlookSyncWebclientModule extends \Aurora\System\Module\AbstractModule
 {
 	/***** public functions might be called with web API *****/
 	/**
