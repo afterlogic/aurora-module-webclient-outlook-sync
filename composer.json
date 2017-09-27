@@ -11,8 +11,6 @@
 		"afterlogic/aurora-framework": "~0.1"
 	},
 	"extra": {
-		"installer-name": "OutlookSyncWebclient",
-		"include-in-mobile": false,
-		"include-in-desktop": true
+		"installer-name": "OutlookSyncWebclient"
 	}
 }
