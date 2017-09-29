@@ -1,14 +1,9 @@
 {
 	"name": "afterlogic/aurora-module-webclient-outlook-sync",
-	"version": "0.1.0",
 	"type": "aurora-module",
-	"dist": {
-		"url": "https://github.com/afterlogic/aurora-module-webclient-outlook-sync/archive/master.zip",
-		"type": "zip"
-	},
 	"require": {
 		"php": ">=5.4.0",
-		"afterlogic/aurora-framework": "~0.1"
+		"afterlogic/aurora-framework": "~0.6"
 	},
 	"extra": {
 		"installer-name": "OutlookSyncWebclient"
