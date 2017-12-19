@@ -7,7 +7,7 @@ var
 ;
 
 module.exports = {
-	ServerModuleName: 'OutlookSync',
+	ServerModuleName: 'MobileSync',
 	HashModuleName: 'outlooksync',
 	
 	Plugin32DownloadLink: '',

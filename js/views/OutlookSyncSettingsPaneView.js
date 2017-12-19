@@ -36,9 +36,9 @@ function COutlookSyncSettingsPaneView()
 
 COutlookSyncSettingsPaneView.prototype.ViewTemplate = '%ModuleName%_OutlookSyncSettingsPaneView';
 
-COutlookSyncSettingsPaneView.prototype.onRoute = function ()
+COutlookSyncSettingsPaneView.prototype.showTab = function ()
 {
-	Ajax.send(Settings.ServerModuleName, 'GetInfo', this.onGetInfoResponse, this);
+	Ajax.send(Settings.ServerModuleName, 'GetInfo', null, this.onGetInfoResponse, this);
 };
 
 /**
@@ -49,13 +49,13 @@ COutlookSyncSettingsPaneView.prototype.onGetInfoResponse = function (oResponse, 
 {
 	var oResult = oResponse.Result;
 	
-	if (!oResult)
+	if (!oResult || !oResult.Dav)
 	{
 		Api.showErrorByCode(oResponse);
 	}
 	else
 	{
-		this.server(oResult.Server);
+		this.server(oResult.Dav.Server);
 	}
 };
 
