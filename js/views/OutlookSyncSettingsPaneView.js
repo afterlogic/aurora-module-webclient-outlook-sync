@@ -3,8 +3,6 @@
 var
 	ko = require('knockout'),
 	
-	TextUtils = require('%PathToCoreWebclientModule%/js/utils/Text.js'),
-	
 	Ajax = require('%PathToCoreWebclientModule%/js/Ajax.js'),
 	Api = require('%PathToCoreWebclientModule%/js/Api.js'),
 	App = require('%PathToCoreWebclientModule%/js/App.js'),
@@ -29,9 +27,7 @@ function COutlookSyncSettingsPaneView()
 	this.sPlugin64DownloadLink = Settings.Plugin64DownloadLink;
 	this.sPluginReadMoreLink = Settings.PluginReadMoreLink;
 
-	this.credentialsHintText = ko.computed(function () {
-		return TextUtils.i18n('COREWEBCLIENT/INFO_MOBILE_CREDENTIALS', {'LOGIN': App.userPublicId()});
-	}, this);
+	this.credentialsHintText = App.mobileCredentialsHintText;
 }
 
 COutlookSyncSettingsPaneView.prototype.ViewTemplate = '%ModuleName%_OutlookSyncSettingsPaneView';
