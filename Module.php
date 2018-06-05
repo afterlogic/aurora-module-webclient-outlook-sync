@@ -27,9 +27,9 @@ class Module extends \Aurora\System\Module\AbstractWebclientModule
 		\Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::Anonymous);
 		
 		return array(
-			'Plugin32DownloadLink' => '', // AppData.Links.OutlookSyncPlugin32
-			'Plugin64DownloadLink' => '', // AppData.Links.OutlookSyncPlugin64
-			'PluginReadMoreLink' => '' // AppData.Links.OutlookSyncPluginReadMore
+			'Plugin32DownloadLink' => $this->getConfig('Plugin32DownloadLink', ''),
+			'Plugin64DownloadLink' => $this->getConfig('Plugin64DownloadLink', ''),
+			'PluginReadMoreLink' => $this->getConfig('PluginReadMoreLink', '')
 		);
 	}
 	/***** public functions might be called with web API *****/

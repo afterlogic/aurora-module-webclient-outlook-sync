@@ -2,5 +2,17 @@
     "Disabled": [
 		false,
 		"bool"
+	],
+	"Plugin32DownloadLink": [
+		"http://www.afterlogic.com/download/OutlookSyncAddIn.msi",
+		"string"
+	],
+	"Plugin64DownloadLink": [
+		"http://www.afterlogic.com/download/OutlookSyncAddIn64.msi",
+		"string"
+	],
+	"PluginReadMoreLink": [
+		"http://www.afterlogic.com/docs/aurora/configuring-webmail/outlook-sync",
+		"string"
 	]
 }
