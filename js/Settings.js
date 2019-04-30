@@ -10,8 +10,7 @@ module.exports = {
 	ServerModuleName: 'MobileSync',
 	HashModuleName: 'outlooksync',
 	
-	Plugin32DownloadLink: '',
-	Plugin64DownloadLink: '',
+	PluginDownloadLink: '',
 	PluginReadMoreLink: '',
 	
 	/**
@@ -25,8 +24,7 @@ module.exports = {
 		
 		if (!_.isEmpty(oAppDataSection))
 		{
-			this.Plugin32DownloadLink = Types.pString(oAppDataSection.Plugin32DownloadLink, this.Plugin32DownloadLink);
-			this.Plugin64DownloadLink = Types.pString(oAppDataSection.Plugin64DownloadLink, this.Plugin64DownloadLink);
+			this.PluginDownloadLink = Types.pString(oAppDataSection.PluginDownloadLink, this.PluginDownloadLink);
 			this.PluginReadMoreLink = Types.pString(oAppDataSection.PluginReadMoreLink, this.PluginReadMoreLink);
 		}
 	}

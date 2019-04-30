@@ -3,12 +3,8 @@
 		false,
 		"bool"
 	],
-	"Plugin32DownloadLink": [
-		"https://afterlogic.com/download/OutlookSyncAddIn.msi",
-		"string"
-	],
-	"Plugin64DownloadLink": [
-		"https://afterlogic.com/download/OutlookSyncAddIn64.msi",
+	"PluginDownloadLink": [
+		"https://afterlogic.com/download/OutlookSyncSetup.exe",
 		"string"
 	],
 	"PluginReadMoreLink": [

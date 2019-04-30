@@ -27,8 +27,7 @@ class Module extends \Aurora\System\Module\AbstractWebclientModule
 		\Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::Anonymous);
 		
 		return array(
-			'Plugin32DownloadLink' => $this->getConfig('Plugin32DownloadLink', ''),
-			'Plugin64DownloadLink' => $this->getConfig('Plugin64DownloadLink', ''),
+			'PluginDownloadLink' => $this->getConfig('PluginDownloadLink', ''),
 			'PluginReadMoreLink' => $this->getConfig('PluginReadMoreLink', '')
 		);
 	}

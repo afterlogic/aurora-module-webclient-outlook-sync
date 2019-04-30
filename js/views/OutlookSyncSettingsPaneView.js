@@ -23,8 +23,7 @@ function COutlookSyncSettingsPaneView()
 	
 	this.bDemo = UserSettings.IsDemo;
 
-	this.sPlugin32DownloadLink = Settings.Plugin32DownloadLink;
-	this.sPlugin64DownloadLink = Settings.Plugin64DownloadLink;
+	this.sPluginDownloadLink = Settings.PluginDownloadLink;
 	this.sPluginReadMoreLink = Settings.PluginReadMoreLink;
 
 	this.credentialsHintText = App.mobileCredentialsHintText;
