@@ -1,14 +1,26 @@
 {
-	"Disabled": [
-		false,
-		"bool"
-	],
-	"PluginDownloadLink": [
-		"https://afterlogic.com/download/OutlookSyncSetup.exe",
-		"string"
-	],
-	"PluginReadMoreLink": [
-		"",
-		"string"
-	]
+  "Disabled": [
+    false,
+    "bool"
+  ],
+  "Disabled_Description": [
+    "",
+    "string"
+  ],
+  "PluginDownloadLink": [
+    "https://afterlogic.com/download/OutlookSyncSetup.exe",
+    "string"
+  ],
+  "PluginDownloadLink_Description": [
+    "",
+    "string"
+  ],
+  "PluginReadMoreLink": [
+    "",
+    "string"
+  ],
+  "PluginReadMoreLink_Description": [
+    "",
+    "string"
+  ]
 }
