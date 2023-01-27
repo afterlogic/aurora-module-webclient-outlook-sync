@@ -16,20 +16,20 @@ namespace Aurora\Modules\OutlookSyncWebclient;
  */
 class Module extends \Aurora\System\Module\AbstractWebclientModule
 {
-	/***** public functions might be called with web API *****/
-	/**
-	 * Obtains list of module settings for authenticated user.
-	 * 
-	 * @return array
-	 */
-	public function GetSettings()
-	{
-		\Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::Anonymous);
-		
-		return array(
-			'PluginDownloadLink' => $this->getConfig('PluginDownloadLink', ''),
-			'PluginReadMoreLink' => $this->getConfig('PluginReadMoreLink', '')
-		);
-	}
-	/***** public functions might be called with web API *****/
+    /***** public functions might be called with web API *****/
+    /**
+     * Obtains list of module settings for authenticated user.
+     *
+     * @return array
+     */
+    public function GetSettings()
+    {
+        \Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::Anonymous);
+
+        return array(
+            'PluginDownloadLink' => $this->getConfig('PluginDownloadLink', ''),
+            'PluginReadMoreLink' => $this->getConfig('PluginReadMoreLink', '')
+        );
+    }
+    /***** public functions might be called with web API *****/
 }
