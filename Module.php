@@ -12,6 +12,8 @@ namespace Aurora\Modules\OutlookSyncWebclient;
  * @license https://afterlogic.com/products/common-licensing Afterlogic Software License
  * @copyright Copyright (c) 2023, Afterlogic Corp.
  *
+ * @property Settings $oModuleSettings
+ *
  * @package Modules
  */
 class Module extends \Aurora\System\Module\AbstractWebclientModule
@@ -46,8 +48,8 @@ class Module extends \Aurora\System\Module\AbstractWebclientModule
         \Aurora\System\Api::checkUserRoleIsAtLeast(\Aurora\System\Enums\UserRole::Anonymous);
 
         return array(
-            'PluginDownloadLink' => $this->getConfig('PluginDownloadLink', ''),
-            'PluginReadMoreLink' => $this->getConfig('PluginReadMoreLink', '')
+            'PluginDownloadLink' => $this->oModuleSettings->PluginDownloadLink,
+            'PluginReadMoreLink' => $this->oModuleSettings->PluginReadMoreLink
         );
     }
     /***** public functions might be called with web API *****/
