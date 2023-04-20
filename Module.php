@@ -21,7 +21,14 @@ class Module extends \Aurora\System\Module\AbstractWebclientModule
     /***** public functions might be called with web API *****/
 
     /**
-     *
+     * @return Module
+     */
+    public static function getInstance()
+    {
+        return parent::getInstance();
+    }
+
+    /**
      * @return Module
      */
     public static function Decorator()
@@ -30,7 +37,6 @@ class Module extends \Aurora\System\Module\AbstractWebclientModule
     }
 
     /**
-     *
      * @return Settings
      */
     public function getModuleSettings()
